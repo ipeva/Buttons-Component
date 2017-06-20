@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.button {
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  text-shadow: 2px 2px 5px gray;
+  border: 2px solid darkblue;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px 5px yellow;
+  transition: background-color 1s ease-in-out;
+}
+
+.oval-button {
+  border-radius: 50%;
+  padding: 1em;
+  border-style: dashed;
+  border-top-width: 0;
+}
+
+.simple-button {
+  text-shadow: none;
+  color: darkblue;
+  border: 0.5px solid black;
+}
+
+.neon-button {
+  background-color: hsla(25, 40%, 50%, 0.7);
+  color: rgba(0, 0, 255, 0.7);
+  text-shadow: 0 0 5px hsla(15, 10%, 90%, 0.7);
+  border-color: hsla(15, 20%, 41%, 0.7);
+  box-shadow: 0 0 15px #022fa0;
+}
+
+.neon-button:hover {
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.d3d-button {
+  border-width: 5px;
+  border-style: outset;
+  text-shadow: 2px 2px 5px yellow;
+  text-justify: inter-word;
+}
+
+.b-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.b-default:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  text-shadow: 2px 2px 5px darkblue;
+}
+
+.b-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.b-primary:hover{
+  background-color: #286090;
+  border-color: #204d74;
+  text-shadow: 2px 2px 5px green;
+}
+
+.b-success{
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.b-success:hover{
+  background-color: #449d44;
+  border-color: #398439;
+  text-shadow: 2px 2px 5px lightgreen;
+}
+
+.b-info{
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.b-info:hover{
+  background-color: #31b0d5;
+  border-color: #269abc;
+  text-shadow: 2px 2px 5px white;
+}
+
+.b-warning{
+  background: #f0ad4e;
+  border-color: #eea236;
+}
+
+.b-warning:hover{
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.b-danger{
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.b-danger:hover{
+  background-color: #c9302c;
+  border-color: #ac2925;
+  text-shadow: 2px 2px 5px orange;
+}
+
+.d3d-button:hover {
+  text-shadow: 2px 2px 5px green;
+  border-style: inset;
+  transition: text-shadow 1s ease-in-out;
+}
+
+.neon-button.b-default {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 5px #102aff;
+}
+
+.neon-button.b-default:hover {
+  color: hsla(152, 50%, 15%, 0.7);
+  box-shadow: 0 0 15px #a2aafa;
+  -webkit-animation: neondef 1.5s ease-in-out infinite alternate;
+  -moz-animation: neondef 1.5s ease-in-out infinite alternate;
+  animation: neondef 1.5s ease-in-out infinite alternate;
+}
+
+.neon-button.b-primary {
+  text-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 15px #a0ff2a;
+}
+
+.neon-button.b-primary:hover {
+  color: green;
+  box-shadow: 0 0 15px #92aa12;
+}
+
+.neon-button.b-success {
+  text-shadow: 0 0 10px #0f0f0f;
+  box-shadow: 0 0 15px #0f0f0f;
+}
+
+.neon-button.b-success:hover {
+  color: red;
+  box-shadow: 0 0 15px #050505;
+}
+
+.neon-button.b-info {
+  text-shadow: 0 0 10px #ee00ee;
+  box-shadow: 0 0 15px #aeffba;
+}
+
+.neon-button.b-info:hover {
+  color: black;
+  box-shadow: 0 0 15px #9eaaa0;
+}
+
+.neon-button.b-warning {
+  text-shadow: 0 0 10px #0f0a29;
+  box-shadow: 0 0 15px #ff0000;
+}
+
+.neon-button.b-warning:hover {
+  box-shadow: 0 0 15px #00ffff;
+  color: darkblue;
+}
+
+.neon-button.b-danger {
+  color: lightblue;
+  box-shadow: 0 0 15px #0505ff;
+}
+
+.neon-button.b-danger:hover {
+  color: darkgreen;
+  box-shadow: 0 0 15px #75150f;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 14px #fff, 0 0 17px #d2ffa0, 0 0 20px #d2ffa0, 0 0 25px #d2ffa0;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 12px #d2ffa0, 0 0 15px #d2ffa0, 0 0 20px #d2ffa0;
+  }
+}
+
+@-moz-keyframes neon {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 14px #fff, 0 0 17px #d2ffa0, 0 0 20px #d2ffa0, 0 0 25px #d2ffa0;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 12px #d2ffa0, 0 0 15px #d2ffa0, 0 0 20px #d2ffa0;
+  }
+}
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 14px #fff, 0 0 17px #d2ffa0, 0 0 20px #d2ffa0, 0 0 25px #d2ffa0;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 12px #d2ffa0, 0 0 15px #d2ffa0, 0 0 20px #d2ffa0;
+  }
+}
+
+@keyframes neondef {
+  from {
+    text-shadow: 0 0 5px #aaa, 0 0 10px #aaa, 0 0 14px #aaa, 0 0 17px #d2ffa0, 0 0 20px #d2ffa0, 0 0 25px #d2ffa0;
+  }
+  to {
+    text-shadow: 0 0 2px #aaa, 0 0 5px #aaa, 0 0 7px #aaa, 0 0 12px #d2ffa0, 0 0 15px #d2ffa0, 0 0 20px #d2ffa0;
+  }
+}
+
+@-moz-keyframes neondef {
+  from {
+    text-shadow: 0 0 5px #aaa, 0 0 10px #aaa, 0 0 14px #aaa, 0 0 17px #d2ffa0, 0 0 20px #d2ffa0, 0 0 25px #d2ffa0;
+  }
+  to {
+    text-shadow: 0 0 2px #aaa, 0 0 5px #aaa, 0 0 7px #aaa, 0 0 12px #d2ffa0, 0 0 15px #d2ffa0, 0 0 20px #d2ffa0;
+  }
+}
+
+@-webkit-keyframes neondef {
+  from {
+    text-shadow: 0 0 5px #aaa, 0 0 10px #aaa, 0 0 14px #aaa, 0 0 17px #d2ffa0, 0 0 20px #d2ffa0, 0 0 25px #d2ffa0;
+  }
+  to {
+    text-shadow: 0 0 2px #aaa, 0 0 5px #aaa, 0 0 7px #aaa, 0 0 12px #d2ffa0, 0 0 15px #d2ffa0, 0 0 20px #d2ffa0;
+  }
+}
